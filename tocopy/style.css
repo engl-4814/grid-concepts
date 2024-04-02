@@ -110,20 +110,5 @@ img {
   height: 100%;
 }
 
-/* HOME HERO BANNER
+/* GRID WORK, YO!
 ==================*/
-
-.home__hero_banner_container {
-
-  ul {
-    list-style-type: none;
-  }
-  ul,li {
-    font-weight: 600;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Grid */
-
-}
