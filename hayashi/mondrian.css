@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter&family=Lobster&display=swap');
+
+:root {
+  --headingFonts: "Bree Serif",serif;
+  --copyFonts: "Poppins";
+  --specialCaseFonts: "Lobster",cursive;
+
+  --backgroundColor: #ffe9d7;
+  --foregroundColor: #0d242f;
+
+  --primaryColor: #c51350;
+  --primaryShade1: #ffd6b5;
+  --primaryShade2: #ffbc85;
+  --primaryShade3: #ffa053;
+  --primaryShade4: #e8751a;
+  --primaryShade5: #e46802;
+
+  --secondaryColor: #f44336;
+  --secondaryShade1: #ffdde0;
+  --secondaryShade2: #ffcdd2;
+  --secondaryShade3: #ef9a9a;
+  --secondaryShade4: #d32f2f;
+  --secondaryShade5: #b71c1c;
+
+  --accentColor: #fda403;
+  --accentShade1: #f9f1dc;
+  --accentShade2: #f4dea7;
+  --accentShade3: #f2cb69;
+  --accentShade4: #f0bb34;
+  --accentShade5: #b68300;
+
+  --accent2Color: #009688;
+  --accent2Shade1: #e0f2f1;
+  --accent2Shade2: #b2dfdb;
+  --accent2Shade3: #64babe;
+  --accent2Shade4: #429499;
+  --accent2Shade5: #1d7b80;
+
+  --accent3Color: #014980;
+  --accent3Shade1: #80c8ff;
+  --accent3Shade2: #46adfc;
+  --accent3Shade3: #2089d9;
+  --accent3Shade4: #0067b6;
+  --accent3Shade5: #02589b;
+
+  --neutralShade1: #f2f2f2;
+  --neutralShade2: #e8e9e9;
+  --neutralShade3: #d1d3d4;
+  --neutralShade4: #babdbf;
+  --neutralShade5: #808488;
+  --neutralShade6: #666a6d;
+  --neutralShade7: #4d5052;
+  --neutralShade8: #212122;
+  
+  font-size: 18px;
+}
+
+main > * {
+  display: grid;
+  border: 1px solid var(--foregroundColor);
+}
+
+/*MONDRIAN GRID #1*/
+.mondrian-one {
+  grid-template-columns: 1fr 2fr 100px;
+  
+  grid-template-areas: 
+  "1 2 2"
+  "3 2 2"
+  "4 5 6"
+  "4 5 7";
+
+    & > * {
+    min-height: 300px;
+    border: 1px solid var(--foregroundColor);
+  }
+
+  /* 1. Name grid items as grid areas */
+  & >*:nth-child(1) { grid-area: 1; }
+  & >*:nth-child(2) { grid-area: 2; background-color: red; }
+  & >*:nth-child(3) { grid-area: 3; }
+  & >*:nth-child(4) { grid-area: 4; }
+  & >*:nth-child(5) { grid-area: 5; }
+  & >*:nth-child(6) { grid-area: 6; }
+  & >*:nth-child(7) { grid-area: 7; }
+}
