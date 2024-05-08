@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter&family=Lobster&display=swap');
+
+element {
+    grid-column: 2 /-1;
+    grid-row: 1/ 8;
+    background: red;
+
+}
+.modrian-one {
+    grid-template-columns: 1fr 2fr 100px;
+    grid-template-areas: none
+    "1 2 3"
+    "3 2 2";
+}
+& > * {
+    min-height: 300px;
+    border: 1px solid var (--foregroundColor);
+}
+
+/* 1) Name grid items as grid areas */
+& > *:nth-child(1) {grid-area: "1";}
+& > *:nth-child(2) {grid-area: "2";}
+& > *:nth-child(3) {grid-area: "3";}
+& > *:nth-child(4) {grid-area: "4";}
+& > *:nth-child(5) {grid-area: "5";}
+& > *:nth-child(6) {grid-area: "6";}
+& > *:nth-child(7) {grid-area: "7";}
+
+
+/* GENERAL COLOR SCHEME
+======================*/
+
+/* TYPOGRAPHY
+============*/
+
+
+
+
+/* MEDIA
+=======*/
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* GRID WORK, YO!
+==================*/
